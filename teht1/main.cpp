@@ -4,18 +4,20 @@
 
 using namespace std;
 
-int main()
-{
+int game(int maxnum) {
     srand(time(0));
 
-    int cnum = rand() % 20 + 1;
+    int cnum = rand() % maxnum + 1;
     int gnum;
+    int attempts = 0;
 
-    cout << "Arvaa luku valilta 1-20, niin tarkistetaan onko se oikein" << endl;
+    cout << "Arvaa luku valilta 1-" << maxnum << ", niin tarkistetaan onko se oikein" << endl;
 
     do {
         cout << "Arvaa lukua: ";
         cin >> gnum;
+
+         attempts++;
 
         if(gnum < cnum) {
             cout << "Haetaan suurempaa lukua" << endl;
@@ -25,6 +27,17 @@ int main()
             cout << "Arvasit oikein!" << endl;
         }
     } while(gnum != cnum);
+
+    return attempts;
+}
+
+int main() {
+
+    int maxnum;
+    cout << "Anna suurin mahdollinen numero ";
+    cin >> maxnum;
+    int attempts = game(maxnum);
+    cout << "Arvasit lukua " << attempts << " kertaa" << endl;
 
     return 0;
 }
