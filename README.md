@@ -9,3 +9,5 @@ Tehtävässä 3 harjoittelin tekemään kaksi erillistä luokkaa, Chef ja Italia
 Lisäksi ItalianChef osaa tehdä salaista ruokaa (pizzaa), mutta sitä varten täytyy tietää salasana. 
 Kukin ruoka vaatii tietyn määrän ainesosia: salaatti = 5 ainesosaa, keitto = 3 ainesosaa ja pizza = 5 jauhoja + 5 vettä. 
 Aluksi asiakkaalta kysytään, kumpi kokki tekee ruoat, sitten kysytään, mitä ruokaa tehdään, ja lopuksi kuinka paljon ainesosia ruokaan tulee.
+
+Tehtävässä 4 harjoitteln yhdistelmäolioiden laatimista ja käyttöä pankkisiirtojen muodossa.
