@@ -10,3 +10,7 @@ teht5/build
 teht5/*.user
 teht6/build
 teht6/*.user
+teht7_count/build
+teht7_count/*.user
+teht7_laskin/build
+teht7_laskin/*.user
