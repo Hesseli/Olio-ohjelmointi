@@ -17,17 +17,14 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void numberClicks();
-    void operClicks();
-    void clearClick();
-    void enterClick();
+    void numbers();
+    void operators();
+    void clearEnter();
 
 private:
     Ui::MainWindow *ui;
 
+    QString currentOperator;
     int currentBox;
-    QString currentOperation;
 };
-
 #endif // MAINWINDOW_H
